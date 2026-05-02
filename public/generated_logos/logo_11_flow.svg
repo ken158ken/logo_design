@@ -1,24 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!-- Created by Gemini CLI -->
-<svg width="200" height="200" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+<svg id="logo-11" width="200" height="200" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
     <defs>
         <linearGradient id="grad10" x1="0%" y1="0%" x2="100%" y2="100%">
             <stop offset="0%" style="stop-color:#4A90E2;stop-opacity:1" />
             <stop offset="100%" style="stop-color:#ffffff;stop-opacity:0.5" />
         </linearGradient>
     </defs>
-    <!-- Background circle for a clean look -->
     <circle cx="100" cy="100" r="90" fill="#f9f9f9" stroke="#4A90E2" stroke-width="2" />
-    
-    <!-- Abstract Brain Shape -->
     <path d="M70 100 C70 70, 130 70, 130 100 C130 130, 70 130, 70 100 Z" fill="url(#grad10)" />
     <path d="M85 80 C85 60, 115 60, 115 80 C115 100, 85 100, 85 80 Z" fill="url(#grad10)" opacity="0.8" />
     <path d="M85 120 C85 100, 115 100, 115 120 C115 140, 85 140, 85 120 Z" fill="url(#grad10)" opacity="0.8" />
-    
-    <!-- Theme specific element (Simplified representations) -->
     <circle cx="100" cy="100" r="10" fill="white" opacity="0.5" />
     <text x="100" y="155" font-family="Arial" font-size="12" text-anchor="middle" fill="#4A90E2">Flow</text>
-    
-    <!-- Decorative psychology symbol-like lines -->
     <path d="M100 80 Q110 90 100 100 Q90 110 100 120" fill="none" stroke="#4A90E2" stroke-width="2" />
 </svg>

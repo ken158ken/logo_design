@@ -3,23 +3,205 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Logo 設計</title>
+    <title>Logo 設計展示 - 心理學延伸系列</title>
     <style>
-      body { margin: 0; font-family: system-ui, sans-serif; background: #fafafa; }
-      .container { max-width: 960px; margin: 0 auto; padding: 32px 16px; }
-      h1 { font-size: 20px; color: #333; margin: 0 0 24px; }
-      .grid { display: grid; gap: 16px; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); }
-      .card { background: #fff; border: 1px solid #eee; border-radius: 8px; padding: 12px; }
-      .card img { width: 100%; height: auto; display: block; border-radius: 4px; }
+      body { margin: 0; font-family: 'Segoe UI', system-ui, sans-serif; background: #f0f2f5; color: #1c1e21; }
+      .container { max-width: 1200px; margin: 0 auto; padding: 40px 20px; }
+      header { text-align: center; margin-bottom: 40px; }
+      h1 { font-size: 2.5rem; color: #1a73e8; margin-bottom: 8px; }
+      p.subtitle { color: #5f6368; font-size: 1.1rem; }
+      
+      section { margin-bottom: 60px; }
+      h2 { border-left: 5px solid #1a73e8; padding-left: 15px; margin-bottom: 24px; font-size: 1.5rem; }
+
+      .grid { display: grid; gap: 24px; grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); }
+      .card { background: #fff; border: none; border-radius: 12px; padding: 20px; box-shadow: 0 2px 10px rgba(0,0,0,0.05); transition: transform 0.2s; position: relative; }
+      .card:hover { transform: translateY(-5px); box-shadow: 0 4px 20px rgba(0,0,0,0.1); }
+      .card img { width: 100%; height: auto; display: block; margin-bottom: 12px; }
+      .card-id { font-size: 0.75rem; color: #9aa0a6; position: absolute; top: 10px; right: 10px; }
+      .card-label { text-align: center; font-weight: 600; color: #3c4043; }
+      .sample-label { background: #e8f0fe; color: #1967d2; padding: 4px 8px; border-radius: 4px; font-size: 0.8rem; display: inline-block; margin-top: 8px; }
     </style>
   </head>
   <body>
     <div class="container">
-      <h1>Logo 設計概念</h1>
-      <div class="grid">
-        <div class="card"><img src="/logo1.jpg" alt="logo 1" /></div>
-        <div class="card"><img src="/logo2.jpg" alt="logo 2" /></div>
-      </div>
+      <header>
+        <h1>心理學系列 Logo 設計</h1>
+        <p class="subtitle">由 Gemini CLI 生成，基於「大腦思考」與「心理學延伸」概念</p>
+      </header>
+
+      <section>
+        <h2>樣本參考 (Original Samples)</h2>
+        <div class="grid">
+          <div class="card">
+            <img src="/sample_logo1.jpg" alt="樣本 1" />
+            <div class="card-label">樣本 1</div>
+            <div style="text-align:center"><span class="sample-label">樣本原圖</span></div>
+          </div>
+          <div class="card">
+            <img src="/sample_logo2.jpg" alt="樣本 2" />
+            <div class="card-label">樣本 2</div>
+            <div style="text-align:center"><span class="sample-label">樣本原圖</span></div>
+          </div>
+        </div>
+      </section>
+
+      <section>
+        <h2>Gemini 生成設計 (30 款)</h2>
+        <div class="grid">
+          
+        <div class="card" id="card-logo-01">
+          <div class="card-id">ID: logo-01</div>
+          <img src="/generated_logos/logo_01_cognition.svg" alt="Cognition Logo" />
+          <div class="card-label">Cognition</div>
+        </div>
+        <div class="card" id="card-logo-02">
+          <div class="card-id">ID: logo-02</div>
+          <img src="/generated_logos/logo_02_insight.svg" alt="Insight Logo" />
+          <div class="card-label">Insight</div>
+        </div>
+        <div class="card" id="card-logo-03">
+          <div class="card-id">ID: logo-03</div>
+          <img src="/generated_logos/logo_03_neural.svg" alt="Neural Logo" />
+          <div class="card-label">Neural</div>
+        </div>
+        <div class="card" id="card-logo-04">
+          <div class="card-id">ID: logo-04</div>
+          <img src="/generated_logos/logo_04_growth.svg" alt="Growth Logo" />
+          <div class="card-label">Growth</div>
+        </div>
+        <div class="card" id="card-logo-05">
+          <div class="card-id">ID: logo-05</div>
+          <img src="/generated_logos/logo_05_logic.svg" alt="Logic Logo" />
+          <div class="card-label">Logic</div>
+        </div>
+        <div class="card" id="card-logo-06">
+          <div class="card-id">ID: logo-06</div>
+          <img src="/generated_logos/logo_06_empathy.svg" alt="Empathy Logo" />
+          <div class="card-label">Empathy</div>
+        </div>
+        <div class="card" id="card-logo-07">
+          <div class="card-id">ID: logo-07</div>
+          <img src="/generated_logos/logo_07_creativity.svg" alt="Creativity Logo" />
+          <div class="card-label">Creativity</div>
+        </div>
+        <div class="card" id="card-logo-08">
+          <div class="card-id">ID: logo-08</div>
+          <img src="/generated_logos/logo_08_analysis.svg" alt="Analysis Logo" />
+          <div class="card-label">Analysis</div>
+        </div>
+        <div class="card" id="card-logo-09">
+          <div class="card-id">ID: logo-09</div>
+          <img src="/generated_logos/logo_09_potential.svg" alt="Potential Logo" />
+          <div class="card-label">Potential</div>
+        </div>
+        <div class="card" id="card-logo-10">
+          <div class="card-id">ID: logo-10</div>
+          <img src="/generated_logos/logo_10_vision.svg" alt="Vision Logo" />
+          <div class="card-label">Vision</div>
+        </div>
+        <div class="card" id="card-logo-11">
+          <div class="card-id">ID: logo-11</div>
+          <img src="/generated_logos/logo_11_flow.svg" alt="Flow Logo" />
+          <div class="card-label">Flow</div>
+        </div>
+        <div class="card" id="card-logo-12">
+          <div class="card-id">ID: logo-12</div>
+          <img src="/generated_logos/logo_12_inspiration.svg" alt="Inspiration Logo" />
+          <div class="card-label">Inspiration</div>
+        </div>
+        <div class="card" id="card-logo-13">
+          <div class="card-id">ID: logo-13</div>
+          <img src="/generated_logos/logo_13_knowledge.svg" alt="Knowledge Logo" />
+          <div class="card-label">Knowledge</div>
+        </div>
+        <div class="card" id="card-logo-14">
+          <div class="card-id">ID: logo-14</div>
+          <img src="/generated_logos/logo_14_dream.svg" alt="Dream Logo" />
+          <div class="card-label">Dream</div>
+        </div>
+        <div class="card" id="card-logo-15">
+          <div class="card-id">ID: logo-15</div>
+          <img src="/generated_logos/logo_15_mindfulness.svg" alt="Mindfulness Logo" />
+          <div class="card-label">Mindfulness</div>
+        </div>
+        <div class="card" id="card-logo-16">
+          <div class="card-id">ID: logo-16</div>
+          <img src="/generated_logos/logo_16_seed.svg" alt="Seed Logo" />
+          <div class="card-label">Seed</div>
+        </div>
+        <div class="card" id="card-logo-17">
+          <div class="card-id">ID: logo-17</div>
+          <img src="/generated_logos/logo_17_connection.svg" alt="Connection Logo" />
+          <div class="card-label">Connection</div>
+        </div>
+        <div class="card" id="card-logo-18">
+          <div class="card-id">ID: logo-18</div>
+          <img src="/generated_logos/logo_18_passion.svg" alt="Passion Logo" />
+          <div class="card-label">Passion</div>
+        </div>
+        <div class="card" id="card-logo-19">
+          <div class="card-id">ID: logo-19</div>
+          <img src="/generated_logos/logo_19_fluidity.svg" alt="Fluidity Logo" />
+          <div class="card-label">Fluidity</div>
+        </div>
+        <div class="card" id="card-logo-20">
+          <div class="card-id">ID: logo-20</div>
+          <img src="/generated_logos/logo_20_perception.svg" alt="Perception Logo" />
+          <div class="card-label">Perception</div>
+        </div>
+        <div class="card" id="card-logo-21">
+          <div class="card-id">ID: logo-21</div>
+          <img src="/generated_logos/logo_21_depth.svg" alt="Depth Logo" />
+          <div class="card-label">Depth</div>
+        </div>
+        <div class="card" id="card-logo-22">
+          <div class="card-id">ID: logo-22</div>
+          <img src="/generated_logos/logo_22_aspiration.svg" alt="Aspiration Logo" />
+          <div class="card-label">Aspiration</div>
+        </div>
+        <div class="card" id="card-logo-23">
+          <div class="card-id">ID: logo-23</div>
+          <img src="/generated_logos/logo_23_strength.svg" alt="Strength Logo" />
+          <div class="card-label">Strength</div>
+        </div>
+        <div class="card" id="card-logo-24">
+          <div class="card-id">ID: logo-24</div>
+          <img src="/generated_logos/logo_24_clarity.svg" alt="Clarity Logo" />
+          <div class="card-label">Clarity</div>
+        </div>
+        <div class="card" id="card-logo-25">
+          <div class="card-id">ID: logo-25</div>
+          <img src="/generated_logos/logo_25_unconscious.svg" alt="Unconscious Logo" />
+          <div class="card-label">Unconscious</div>
+        </div>
+        <div class="card" id="card-logo-26">
+          <div class="card-id">ID: logo-26</div>
+          <img src="/generated_logos/logo_26_balance.svg" alt="Balance Logo" />
+          <div class="card-label">Balance</div>
+        </div>
+        <div class="card" id="card-logo-27">
+          <div class="card-id">ID: logo-27</div>
+          <img src="/generated_logos/logo_27_resilience.svg" alt="Resilience Logo" />
+          <div class="card-label">Resilience</div>
+        </div>
+        <div class="card" id="card-logo-28">
+          <div class="card-id">ID: logo-28</div>
+          <img src="/generated_logos/logo_28_healing.svg" alt="Healing Logo" />
+          <div class="card-label">Healing</div>
+        </div>
+        <div class="card" id="card-logo-29">
+          <div class="card-id">ID: logo-29</div>
+          <img src="/generated_logos/logo_29_freedom.svg" alt="Freedom Logo" />
+          <div class="card-label">Freedom</div>
+        </div>
+        <div class="card" id="card-logo-30">
+          <div class="card-id">ID: logo-30</div>
+          <img src="/generated_logos/logo_30_science.svg" alt="Science Logo" />
+          <div class="card-label">Science</div>
+        </div>
+        </div>
+      </section>
     </div>
   </body>
 </html>
