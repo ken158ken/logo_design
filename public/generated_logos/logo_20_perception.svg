@@ -1,17 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!-- Created by Gemini CLI -->
-<svg id="logo-20" width="200" height="200" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
-    <defs>
-        <linearGradient id="grad19" x1="0%" y1="0%" x2="100%" y2="100%">
-            <stop offset="0%" style="stop-color:#7ED321;stop-opacity:1" />
-            <stop offset="100%" style="stop-color:#ffffff;stop-opacity:0.5" />
-        </linearGradient>
-    </defs>
-    <circle cx="100" cy="100" r="90" fill="#f9f9f9" stroke="#7ED321" stroke-width="2" />
-    <path d="M70 100 C70 70, 130 70, 130 100 C130 130, 70 130, 70 100 Z" fill="url(#grad19)" />
-    <path d="M85 80 C85 60, 115 60, 115 80 C115 100, 85 100, 85 80 Z" fill="url(#grad19)" opacity="0.8" />
-    <path d="M85 120 C85 100, 115 100, 115 120 C115 140, 85 140, 85 120 Z" fill="url(#grad19)" opacity="0.8" />
-    <circle cx="100" cy="100" r="10" fill="white" opacity="0.5" />
-    <text x="100" y="155" font-family="Arial" font-size="12" text-anchor="middle" fill="#7ED321">Perception</text>
-    <path d="M100 80 Q110 90 100 100 Q90 110 100 120" fill="none" stroke="#7ED321" stroke-width="2" />
-</svg>
+<!-- Created by Gemini CLI - Diverse Brain Series -->
+
+    <svg id="logo-20" width="200" height="200" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+        <ellipse cx="100" cy="100" rx="40" ry="60" fill="none" stroke="#50E3C2" stroke-width="2"/>
+        <ellipse cx="100" cy="100" rx="25" ry="40" fill="none" stroke="#50E3C2" stroke-width="2" opacity="0.7"/>
+        <ellipse cx="100" cy="100" rx="10" ry="20" fill="#50E3C2"/>
+        <path d="M100 40 V20 M100 160 V180 M140 100 H160 M40 100 H60" stroke="#50E3C2" stroke-width="2"/>
+        <text x="100" y="190" font-family="Arial" font-size="14" text-anchor="middle" font-weight="bold" fill="#50E3C2">Perception</text>
+    </svg>
