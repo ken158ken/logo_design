@@ -1,12 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <svg id="logo-02" width="200" height="200" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
-    <!-- Created by Gemini CLI - Clean Brain Series -->
+    <!-- Created by Gemini CLI - Professional Series -->
+    <rect width="200" height="200" fill="white"/>
     
-    <g fill="none" stroke="#3498DB" stroke-width="2.5" stroke-linecap="round">
-        <path d="M100,60 C80,60 65,75 65,100 C65,125 80,140 100,140"/>
-        <path d="M100,60 C120,60 135,75 135,100 C135,125 120,140 100,140"/>
-        <circle cx="100" cy="100" r="3" fill="#3498DB" stroke="none"/>
-        <path d="M100,90 L100,80 M115,100 L125,100 M100,110 L100,120 M85,100 L75,100" opacity="0.8"/>
-    </g>
-    <text x="100" y="175" font-family="Arial, sans-serif" font-size="12" text-anchor="middle" font-weight="600" fill="#3498DB" opacity="0.8">Insight</text>
+    <path d="M100,45 C75,45 60,65 60,90 C60,110 75,125 85,135 V150 H115 V135 C125,125 140,110 140,90 C140,65 125,45 100,45 Z" fill="none" stroke="#0366D6" stroke-width="4"/>
+    <path d="M85,158 H115 M90,165 H110" stroke="#0366D6" stroke-width="3" stroke-linecap="round"/>
+    <path d="M100,70 V110" stroke="#0366D6" stroke-width="2" stroke-dasharray="4 4"/>
+    <text x="100" y="185" font-family="Helvetica, Arial, sans-serif" font-size="14" text-anchor="middle" font-weight="bold" fill="#0366D6">INSIGHT</text>
 </svg>

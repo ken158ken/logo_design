@@ -1,11 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <svg id="logo-01" width="200" height="200" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
-    <!-- Created by Gemini CLI - Clean Brain Series -->
+    <!-- Created by Gemini CLI - Professional Series -->
+    <rect width="200" height="200" fill="white"/>
     
-    <g fill="none" stroke="#2C3E50" stroke-width="2.5" stroke-linecap="round">
-        <path d="M100,60 C80,60 65,75 65,100 C65,125 80,140 100,140"/>
-        <path d="M100,60 C120,60 135,75 135,100 C135,125 120,140 100,140"/>
-        <path d="M100,70 V130" opacity="0.4"/>
-    </g>
-    <text x="100" y="175" font-family="Arial, sans-serif" font-size="12" text-anchor="middle" font-weight="600" fill="#2C3E50" opacity="0.8">Cognition</text>
+    <path d="M100,60 C85,60 70,70 65,90 C60,110 70,130 85,135 C90,138 95,140 100,140 C105,140 110,138 115,135 C130,130 140,110 135,90 C130,70 115,60 100,60 Z" fill="none" stroke="#24292E" stroke-width="4"/>
+    <path d="M100,70 Q110,85 100,100 Q90,115 100,130" fill="none" stroke="#24292E" stroke-width="2" opacity="0.6"/>
+    <path d="M75,90 Q85,95 85,110 M125,90 Q115,95 115,110" fill="none" stroke="#24292E" stroke-width="2" stroke-linecap="round"/>
+    <text x="100" y="185" font-family="Helvetica, Arial, sans-serif" font-size="14" text-anchor="middle" font-weight="bold" fill="#24292E">COGNITION</text>
 </svg>
