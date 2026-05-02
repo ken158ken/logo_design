@@ -1,10 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!-- Created by Gemini CLI - High-Concept Psychology Series -->
-
-    <svg id="logo-25" width="200" height="200" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
-        <path d="M60 110 Q80 140 100 110 Q120 80 140 110" fill="none" stroke="#1A73E8" stroke-width="4" stroke-linecap="round"/>
-        <circle cx="80" cy="125" r="4" fill="#1A73E8"/>
-        <circle cx="120" cy="95" r="4" fill="#1A73E8"/>
-        <path d="M50 100 A50 50 0 1 1 150 100 A50 50 0 1 1 50 100" fill="none" stroke="#1A73E8" stroke-width="2" stroke-dasharray="2 2"/>
-        <text x="100" y="180" font-family="Verdana" font-size="14" text-anchor="middle" font-weight="bold" fill="#1A73E8">Unconscious</text>
-    </svg>
+<svg id="logo-25" width="200" height="200" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+    <!-- Created by Gemini CLI - Clean Brain Series -->
+    
+    <g fill="none" stroke="#2C3E50" stroke-width="2.5" stroke-linecap="round">
+        <path d="M100,60 C80,60 65,75 65,100 C65,125 80,140 100,140"/>
+        <path d="M100,60 C120,60 135,75 135,100 C135,125 120,140 100,140"/>
+        <path d="M100,70 V130" opacity="0.4"/>
+    </g>
+    <text x="100" y="175" font-family="Arial, sans-serif" font-size="12" text-anchor="middle" font-weight="600" fill="#2C3E50" opacity="0.8">Unconscious</text>
+</svg>
