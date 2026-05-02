@@ -1,10 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!-- Created by Gemini CLI - Diverse Brain Series -->
+<!-- Created by Gemini CLI - High-Concept Psychology Series -->
 
     <svg id="logo-18" width="200" height="200" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
-        <rect x="60" y="60" width="80" height="80" rx="10" fill="none" stroke="#7ED321" stroke-width="3"/>
-        <path d="M60 100 H140 M100 60 V140" stroke="#7ED321" stroke-width="2" opacity="0.6"/>
-        <circle cx="100" cy="100" r="15" fill="#7ED321"/>
-        <path d="M40 40 L60 60 M160 40 L140 60 M40 160 L60 140 M160 160 L140 140" stroke="#7ED321" stroke-width="2"/>
-        <text x="100" y="185" font-family="Arial" font-size="14" text-anchor="middle" font-weight="bold" fill="#7ED321">Passion</text>
+        <path d="M70 60 V120 C70 150 130 150 130 120 V60 M100 50 V160" fill="none" stroke="#00ACC1" stroke-width="6" stroke-linecap="round"/>
+        <path d="M60 90 H140" stroke="#00ACC1" stroke-width="4" stroke-linecap="round"/>
+        <circle cx="100" cy="100" r="70" fill="none" stroke="#00ACC1" stroke-width="1" opacity="0.2"/>
+        <text x="100" y="185" font-family="Verdana" font-size="14" text-anchor="middle" font-weight="bold" fill="#00ACC1">Passion</text>
     </svg>

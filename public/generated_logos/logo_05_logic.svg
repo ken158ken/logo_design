@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!-- Created by Gemini CLI - Diverse Brain Series -->
+<!-- Created by Gemini CLI - High-Concept Psychology Series -->
 
     <svg id="logo-05" width="200" height="200" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
-        <ellipse cx="100" cy="100" rx="40" ry="60" fill="none" stroke="#D0021B" stroke-width="2"/>
-        <ellipse cx="100" cy="100" rx="25" ry="40" fill="none" stroke="#D0021B" stroke-width="2" opacity="0.7"/>
-        <ellipse cx="100" cy="100" rx="10" ry="20" fill="#D0021B"/>
-        <path d="M100 40 V20 M100 160 V180 M140 100 H160 M40 100 H60" stroke="#D0021B" stroke-width="2"/>
-        <text x="100" y="190" font-family="Arial" font-size="14" text-anchor="middle" font-weight="bold" fill="#D0021B">Logic</text>
+        <path d="M60 110 Q80 140 100 110 Q120 80 140 110" fill="none" stroke="#8E24AA" stroke-width="4" stroke-linecap="round"/>
+        <circle cx="80" cy="125" r="4" fill="#8E24AA"/>
+        <circle cx="120" cy="95" r="4" fill="#8E24AA"/>
+        <path d="M50 100 A50 50 0 1 1 150 100 A50 50 0 1 1 50 100" fill="none" stroke="#8E24AA" stroke-width="2" stroke-dasharray="2 2"/>
+        <text x="100" y="180" font-family="Verdana" font-size="14" text-anchor="middle" font-weight="bold" fill="#8E24AA">Logic</text>
     </svg>
