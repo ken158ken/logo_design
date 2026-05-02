@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="200" height="200" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+    <!-- Vectorized Version of Sample 2 -->
+    <path d="M60,100 A40,40 0 1,1 140,100 A40,40 0 1,1 60,100" fill="none" stroke="#0366D6" stroke-width="5"/>
+    <path d="M100,60 V140 M60,100 H140" stroke="#0366D6" stroke-width="2" opacity="0.3"/>
+    <path d="M75,75 L125,125 M125,75 L75,125" stroke="#0366D6" stroke-width="2" opacity="0.3"/>
+    <circle cx="100" cy="100" r="10" fill="#0366D6"/>
+    <text x="100" y="185" font-family="Arial" font-size="12" text-anchor="middle" font-weight="bold" fill="#0366D6">VECTORIZED SAMPLE 2</text>
+</svg>
