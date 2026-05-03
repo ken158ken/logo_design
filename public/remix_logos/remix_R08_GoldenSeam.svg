@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" width="200" height="200">
+<rect width="200" height="200" fill="#FAFAFA"/>
+<g stroke="#4338CA" stroke-width="2.2" fill="none" stroke-linecap="round">
+<path d="M93 56 C72 56 58 76 62 100 C52 110 60 132 80 138 C84 150 95 150 95 138 Z" stroke-width="3"/>
+<path d="M82 78 Q92 90 82 102 Q72 114 82 126" opacity="0.7"/>
+<path d="M70 105 Q80 110 75 122" opacity="0.5" stroke-width="1.5"/>
+</g>
+<g stroke="#4338CA" stroke-width="2.2" fill="none" stroke-linecap="round">
+<path d="M107 56 C128 56 142 76 138 100 C148 110 140 132 120 138 C116 150 105 150 105 138 Z" stroke-width="3"/>
+<path d="M118 78 Q108 90 118 102 Q128 114 118 126" opacity="0.7"/>
+<path d="M130 105 Q120 110 125 122" opacity="0.5" stroke-width="1.5"/>
+</g>
+<path d="M100 50 L96 70 L102 90 L94 110 L104 130 L98 150 L100 158" stroke="#FACC15" stroke-width="3.2" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+<g fill="#FACC15">
+<circle cx="96" cy="70" r="2.2"/><circle cx="102" cy="90" r="2.2"/>
+<circle cx="94" cy="110" r="2.2"/><circle cx="104" cy="130" r="2.2"/>
+<circle cx="98" cy="150" r="2.2"/>
+</g>
+<text x="100" y="190" text-anchor="middle" font-family="Helvetica, Arial, sans-serif" font-size="11" font-weight="700" letter-spacing="2" fill="#FACC15">GOLDEN · SEAM</text>
+</svg>

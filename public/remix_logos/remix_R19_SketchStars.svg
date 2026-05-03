@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" width="200" height="200">
+<rect width="200" height="200" fill="#FAFAFA"/>
+<g stroke="#1a1a1a" stroke-width="3.2" fill="none" stroke-linecap="round" stroke-linejoin="round"><path d="M100 52 C72 50 52 72 58 96 C46 110 56 132 76 132 C76 146 88 154 100 146 L106 158 L112 146 C132 152 148 132 138 110 C152 88 134 58 105 56 Z" stroke-linejoin="round"/></g>
+<g>
+<line x1="78" y1="78" x2="100" y2="68" stroke="#0EA5E9" stroke-width="0.9" opacity="0.45"/>
+<line x1="100" y1="68" x2="122" y2="78" stroke="#0EA5E9" stroke-width="0.9" opacity="0.45"/>
+<line x1="78" y1="78" x2="76" y2="118" stroke="#0EA5E9" stroke-width="0.9" opacity="0.45"/>
+<line x1="122" y1="78" x2="124" y2="118" stroke="#0EA5E9" stroke-width="0.9" opacity="0.45"/>
+<line x1="76" y1="118" x2="100" y2="138" stroke="#0EA5E9" stroke-width="0.9" opacity="0.45"/>
+<line x1="124" y1="118" x2="100" y2="138" stroke="#0EA5E9" stroke-width="0.9" opacity="0.45"/>
+<line x1="78" y1="78" x2="100" y2="100" stroke="#0EA5E9" stroke-width="0.9" opacity="0.45"/>
+<line x1="122" y1="78" x2="100" y2="100" stroke="#0EA5E9" stroke-width="0.9" opacity="0.45"/>
+<line x1="76" y1="118" x2="100" y2="100" stroke="#0EA5E9" stroke-width="0.9" opacity="0.45"/>
+<line x1="124" y1="118" x2="100" y2="100" stroke="#0EA5E9" stroke-width="0.9" opacity="0.45"/>
+<circle cx="100" cy="68" r="3" fill="#0EA5E9"/><circle cx="100" cy="68" r="5.5" fill="none" stroke="#0EA5E9" stroke-width="0.7" opacity="0.4"/><circle cx="78" cy="78" r="2.5" fill="#0EA5E9"/><circle cx="78" cy="78" r="5" fill="none" stroke="#0EA5E9" stroke-width="0.7" opacity="0.4"/><circle cx="122" cy="78" r="2.5" fill="#0EA5E9"/><circle cx="122" cy="78" r="5" fill="none" stroke="#0EA5E9" stroke-width="0.7" opacity="0.4"/><circle cx="76" cy="118" r="2.5" fill="#0EA5E9"/><circle cx="76" cy="118" r="5" fill="none" stroke="#0EA5E9" stroke-width="0.7" opacity="0.4"/><circle cx="124" cy="118" r="2.5" fill="#0EA5E9"/><circle cx="124" cy="118" r="5" fill="none" stroke="#0EA5E9" stroke-width="0.7" opacity="0.4"/><circle cx="100" cy="138" r="3" fill="#0EA5E9"/><circle cx="100" cy="138" r="5.5" fill="none" stroke="#0EA5E9" stroke-width="0.7" opacity="0.4"/><circle cx="100" cy="100" r="3.5" fill="#0EA5E9"/><circle cx="100" cy="100" r="6" fill="none" stroke="#0EA5E9" stroke-width="0.7" opacity="0.4"/>
+</g>
+<text x="100" y="190" text-anchor="middle" font-family="Helvetica, Arial, sans-serif" font-size="11" font-weight="700" letter-spacing="2" fill="#0EA5E9">SKETCH · STARS</text>
+</svg>

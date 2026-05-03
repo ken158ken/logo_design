@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" width="200" height="200">
+<rect width="200" height="200" fill="#FAFAFA"/>
+<g stroke="#1a1a1a" stroke-width="3.2" fill="none" stroke-linecap="round" stroke-linejoin="round"><path d="M100 52 C72 50 52 72 58 96 C46 110 56 132 76 132 C76 146 88 154 100 146 L106 158 L112 146 C132 152 148 132 138 110 C152 88 134 58 105 56 Z" stroke-linejoin="round"/></g>
+<g stroke="#FACC15" stroke-width="2" opacity="0.9" fill="none" stroke-linecap="round" stroke-linejoin="round">
+<path d="M100 60 L94 88 L78 100 L92 120 L88 145"/>
+<path d="M138 92 L116 96 L94 88"/>
+<path d="M78 100 L66 116" stroke-width="1.4"/>
+<path d="M116 96 L132 124" stroke-width="1.4"/>
+<path d="M92 120 L120 128" stroke-width="1.4"/>
+</g>
+<g fill="#FACC15">
+<circle cx="94" cy="88" r="2.5"/>
+<circle cx="116" cy="96" r="2.5"/>
+<circle cx="92" cy="120" r="2.5"/>
+<circle cx="78" cy="100" r="1.8"/>
+<circle cx="120" cy="128" r="1.8"/>
+</g>
+<text x="100" y="190" text-anchor="middle" font-family="Helvetica, Arial, sans-serif" font-size="11" font-weight="700" letter-spacing="2" fill="#FACC15">WABI · MIND</text>
+</svg>
