@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" width="200" height="200">
+<rect width="200" height="200" fill="#FAFAFA"/>
+<g stroke="#7C3AED" stroke-width="3.4" fill="none" stroke-linecap="round" stroke-linejoin="round">
+<path d="M100 50 C115 65 115 90 100 100 C85 95 80 80 95 70 C108 68 115 80 108 92 C95 105 85 122 95 138 C108 152 130 142 130 122 C130 108 118 102 105 108 C95 115 100 130 110 130"/>
+<path d="M105 138 C108 145 100 152 95 148" opacity="0.7" stroke-width="2.4"/>
+<circle cx="100" cy="50" r="3" fill="#7C3AED"/>
+</g>
+<text x="100" y="190" text-anchor="middle" font-family="Helvetica, Arial, sans-serif" font-size="11" font-weight="700" letter-spacing="2" fill="#7C3AED">TREBLE · MIND</text>
+</svg>

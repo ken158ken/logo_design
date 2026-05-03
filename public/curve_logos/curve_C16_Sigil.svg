@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" width="200" height="200">
+<rect width="200" height="200" fill="#FAFAFA"/>
+<g stroke="#15803D" stroke-width="3.2" fill="none" stroke-linecap="round" stroke-linejoin="round">
+<path d="M62 60 C90 50 110 70 100 95 C90 115 70 110 75 90 C82 75 100 80 95 95"/>
+<path d="M138 60 C110 50 90 70 100 95 C110 115 130 110 125 90 C118 75 100 80 105 95"/>
+<path d="M75 130 C95 120 105 140 100 150"/>
+<path d="M125 130 C105 120 95 140 100 150"/>
+<path d="M100 95 L100 130" opacity="0.6" stroke-width="2"/>
+<circle cx="100" cy="95" r="3" fill="#15803D"/>
+<circle cx="100" cy="150" r="2.5" fill="#15803D"/>
+</g>
+<text x="100" y="190" text-anchor="middle" font-family="Helvetica, Arial, sans-serif" font-size="11" font-weight="700" letter-spacing="2" fill="#15803D">SIGIL</text>
+</svg>

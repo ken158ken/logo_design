@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" width="200" height="200">
+<rect width="200" height="200" fill="#FAFAFA"/>
+<g stroke="#E11D48" stroke-width="3.2" fill="none" stroke-linecap="round" stroke-linejoin="round">
+<path d="M100 145 C70 125 50 95 60 75 C70 55 95 60 100 80 C105 60 130 55 140 75 C150 95 130 125 100 145 Z"/>
+<path d="M85 85 C95 75 110 80 108 95 C105 108 90 108 88 95"/>
+<path d="M115 95 C122 90 130 95 128 105 C125 112 116 110 115 102"/>
+<circle cx="100" cy="80" r="2.5" fill="#E11D48"/>
+</g>
+<text x="100" y="190" text-anchor="middle" font-family="Helvetica, Arial, sans-serif" font-size="11" font-weight="700" letter-spacing="2" fill="#E11D48">HEART · COIL</text>
+</svg>

@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" width="200" height="200">
+<rect width="200" height="200" fill="#FAFAFA"/>
+<g stroke="#A855F7" stroke-width="3.2" fill="none" stroke-linecap="round" stroke-linejoin="round">
+<path d="M55 80 C55 55 100 55 100 80 C100 105 145 105 145 80 C145 55 100 55 100 80 C100 105 55 105 55 80 Z"/>
+<path d="M55 120 C55 145 100 145 100 120 C100 95 145 95 145 120 C145 145 100 145 100 120 C100 95 55 95 55 120 Z"/>
+<path d="M70 78 Q80 90 70 95" opacity="0.6" stroke-width="2"/>
+<path d="M130 78 Q120 90 130 95" opacity="0.6" stroke-width="2"/>
+<path d="M70 122 Q80 110 70 105" opacity="0.6" stroke-width="2"/>
+<path d="M130 122 Q120 110 130 105" opacity="0.6" stroke-width="2"/>
+</g>
+<text x="100" y="190" text-anchor="middle" font-family="Helvetica, Arial, sans-serif" font-size="11" font-weight="700" letter-spacing="2" fill="#A855F7">INFINITY · FOLDS</text>
+</svg>

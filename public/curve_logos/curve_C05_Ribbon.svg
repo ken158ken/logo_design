@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" width="200" height="200">
+<rect width="200" height="200" fill="#FAFAFA"/>
+<g stroke="#EC4899" stroke-width="3.4" fill="none" stroke-linecap="round" stroke-linejoin="round">
+<path d="M55 75 C75 55 100 75 100 100 C100 125 125 145 145 125"/>
+<path d="M55 125 C75 145 100 125 100 100 C100 75 125 55 145 75"/>
+<path d="M70 90 Q85 100 70 110" opacity="0.6" stroke-width="2"/>
+<path d="M130 90 Q115 100 130 110" opacity="0.6" stroke-width="2"/>
+<circle cx="55" cy="75" r="2.5" fill="#EC4899"/>
+<circle cx="55" cy="125" r="2.5" fill="#EC4899"/>
+<circle cx="145" cy="75" r="2.5" fill="#EC4899"/>
+<circle cx="145" cy="125" r="2.5" fill="#EC4899"/>
+</g>
+<text x="100" y="190" text-anchor="middle" font-family="Helvetica, Arial, sans-serif" font-size="11" font-weight="700" letter-spacing="2" fill="#EC4899">RIBBON</text>
+</svg>

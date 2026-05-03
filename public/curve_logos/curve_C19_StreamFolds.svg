@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" width="200" height="200">
+<rect width="200" height="200" fill="#FAFAFA"/>
+<defs>
+<linearGradient id="gC19" x1="0" y1="0" x2="1" y2="1">
+<stop offset="0" stop-color="#0EA5E9"/><stop offset="1" stop-color="#06B6D4"/>
+</linearGradient>
+</defs>
+<g stroke="url(#gC19)" stroke-width="3.5" fill="none" stroke-linecap="round" stroke-linejoin="round">
+<path d="M100 56 C75 56 60 75 65 95 C52 105 58 130 78 132 C80 145 100 148 100 132"/>
+<path d="M100 56 C125 56 140 75 135 95 C148 105 142 130 122 132 C120 145 100 148 100 132"/>
+<path d="M75 78 Q88 90 75 100 Q62 110 75 122" opacity="0.85" stroke-width="2.6"/>
+<path d="M125 78 Q112 90 125 100 Q138 110 125 122" opacity="0.85" stroke-width="2.6"/>
+<path d="M85 88 Q95 100 85 110" opacity="0.6" stroke-width="2"/>
+<path d="M115 88 Q105 100 115 110" opacity="0.6" stroke-width="2"/>
+</g>
+<text x="100" y="190" text-anchor="middle" font-family="Helvetica, Arial, sans-serif" font-size="11" font-weight="700" letter-spacing="2" fill="#0EA5E9">STREAM · FOLDS</text>
+</svg>

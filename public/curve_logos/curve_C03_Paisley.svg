@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" width="200" height="200">
+<rect width="200" height="200" fill="#FAFAFA"/>
+<g stroke="#9333EA" stroke-width="3.2" fill="none" stroke-linecap="round" stroke-linejoin="round">
+<path d="M70 130 C50 110 60 70 105 60 C145 55 165 110 130 145 C115 158 95 152 100 138 C108 130 115 118 105 110 C92 105 80 122 85 138 C90 150 76 145 70 130 Z"/>
+<path d="M85 95 C95 85 115 90 112 105 C108 118 92 118 90 105"/>
+<path d="M115 80 C125 75 135 85 130 95"/>
+<circle cx="100" cy="105" r="3" fill="#9333EA"/>
+</g>
+<text x="100" y="190" text-anchor="middle" font-family="Helvetica, Arial, sans-serif" font-size="11" font-weight="700" letter-spacing="2" fill="#9333EA">PAISLEY</text>
+</svg>

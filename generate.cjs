@@ -1324,6 +1324,293 @@ ${[[95,55,3.5],[140,80,3.5],[140,130,3.5],[120,130,3],[88,135,3],[75,100,3],[65,
 }
 
 // ============================================================
+// Curve Series — 20 designs emphasising rich, flowing bezier lines
+// (closer in spirit to the two original samples)
+// ============================================================
+
+const CURVE_DIR = path.join(__dirname, 'public', 'curve_logos');
+fs.mkdirSync(CURVE_DIR, { recursive: true });
+
+const C = [];
+
+// C01 · Single-Stroke Mind — 一筆連續腦
+C.push({
+  id: 'C01', name: 'SingleStroke', label: 'SINGLE · STROKE',
+  color: '#14B8A6',
+  body: `<g stroke="#14B8A6" stroke-width="4" fill="none" stroke-linecap="round" stroke-linejoin="round">
+<path d="M72 95 C58 75 78 50 100 60 C115 48 145 58 142 88 C158 100 148 132 128 132 C132 148 108 156 100 142 C92 156 70 148 72 132 C52 130 44 102 60 92 C55 82 67 72 78 78 C84 92 98 92 100 102 C108 102 116 92 112 80 C124 78 130 92 118 100 C108 108 96 110 90 102"/>
+</g>`
+});
+
+// C02 · Calligraphy — 書法腦摺
+C.push({
+  id: 'C02', name: 'Calligraphy', label: 'CALLIGRAPHY',
+  color: '#1f2937',
+  body: `<g stroke="#1f2937" fill="none" stroke-linecap="round">
+<path d="M58 92 C62 60 100 50 105 75" stroke-width="6"/>
+<path d="M105 75 C108 55 152 58 148 95" stroke-width="5"/>
+<path d="M148 95 C162 110 152 142 130 138" stroke-width="4.5"/>
+<path d="M130 138 C132 152 110 158 102 144" stroke-width="4"/>
+<path d="M102 144 C95 158 70 152 72 136" stroke-width="3.5"/>
+<path d="M72 136 C50 134 42 102 58 92" stroke-width="3"/>
+<path d="M88 80 C100 70 120 78 116 95" stroke-width="2.4" opacity="0.7"/>
+<path d="M82 110 C92 100 108 110 100 124" stroke-width="2" opacity="0.6"/>
+</g>`
+});
+
+// C03 · Paisley Mind — 佩斯利腦
+C.push({
+  id: 'C03', name: 'Paisley', label: 'PAISLEY',
+  color: '#9333EA',
+  body: `<g stroke="#9333EA" stroke-width="3.2" fill="none" stroke-linecap="round" stroke-linejoin="round">
+<path d="M70 130 C50 110 60 70 105 60 C145 55 165 110 130 145 C115 158 95 152 100 138 C108 130 115 118 105 110 C92 105 80 122 85 138 C90 150 76 145 70 130 Z"/>
+<path d="M85 95 C95 85 115 90 112 105 C108 118 92 118 90 105"/>
+<path d="M115 80 C125 75 135 85 130 95"/>
+<circle cx="100" cy="105" r="3" fill="#9333EA"/>
+</g>`
+});
+
+// C04 · Celtic Knot — 凱爾特結
+C.push({
+  id: 'C04', name: 'CelticKnot', label: 'KNOT',
+  color: '#0EA5E9',
+  body: `<g stroke="#0EA5E9" stroke-width="3" fill="none" stroke-linecap="round" stroke-linejoin="round">
+<path d="M70 80 C70 60 100 60 100 80 C100 100 130 100 130 80 C130 60 100 60 100 80"/>
+<path d="M70 120 C70 140 100 140 100 120 C100 100 130 100 130 120 C130 140 100 140 100 120"/>
+<path d="M70 80 C50 90 50 110 70 120"/>
+<path d="M130 80 C150 90 150 110 130 120"/>
+<path d="M85 95 Q100 100 115 95" opacity="0.6" stroke-width="2"/>
+<path d="M85 105 Q100 100 115 105" opacity="0.6" stroke-width="2"/>
+</g>`
+});
+
+// C05 · Ribbon Mind — 絲帶折轉
+C.push({
+  id: 'C05', name: 'Ribbon', label: 'RIBBON',
+  color: '#EC4899',
+  body: `<g stroke="#EC4899" stroke-width="3.4" fill="none" stroke-linecap="round" stroke-linejoin="round">
+<path d="M55 75 C75 55 100 75 100 100 C100 125 125 145 145 125"/>
+<path d="M55 125 C75 145 100 125 100 100 C100 75 125 55 145 75"/>
+<path d="M70 90 Q85 100 70 110" opacity="0.6" stroke-width="2"/>
+<path d="M130 90 Q115 100 130 110" opacity="0.6" stroke-width="2"/>
+<circle cx="55" cy="75" r="2.5" fill="#EC4899"/>
+<circle cx="55" cy="125" r="2.5" fill="#EC4899"/>
+<circle cx="145" cy="75" r="2.5" fill="#EC4899"/>
+<circle cx="145" cy="125" r="2.5" fill="#EC4899"/>
+</g>`
+});
+
+// C06 · Topograph — 等高線思維
+C.push({
+  id: 'C06', name: 'Topograph', label: 'TOPOGRAPH',
+  color: '#059669',
+  body: `<g stroke="#059669" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round">
+<path d="M55 100 Q55 60 100 55 Q150 55 145 100 Q150 145 100 145 Q55 145 55 100 Z" stroke-width="2.8"/>
+<path d="M65 100 Q68 70 100 68 Q138 68 135 100 Q140 132 100 132 Q65 132 65 100 Z" opacity="0.85"/>
+<path d="M76 100 Q82 80 100 80 Q126 80 124 100 Q128 120 100 120 Q76 120 76 100 Z" opacity="0.7"/>
+<path d="M86 100 Q92 90 100 90 Q116 90 114 100 Q118 110 100 110 Q86 110 86 100 Z" opacity="0.55"/>
+<path d="M94 100 Q98 96 100 96 Q106 96 105 100 Q108 104 100 104 Q94 104 94 100 Z" opacity="0.4"/>
+<circle cx="100" cy="100" r="2" fill="#059669"/>
+</g>`
+});
+
+// C07 · Smoke Trails — 煙霧縷
+C.push({
+  id: 'C07', name: 'Smoke', label: 'SMOKE',
+  color: '#6366F1',
+  body: `<g stroke="#6366F1" stroke-width="2.6" fill="none" stroke-linecap="round">
+<path d="M75 150 C70 130 90 120 80 100 C70 80 95 70 88 50"/>
+<path d="M100 152 C95 130 110 118 105 100 C100 80 115 75 110 55"/>
+<path d="M125 150 C120 130 135 120 128 100 C122 82 138 72 132 52" opacity="0.85"/>
+<path d="M82 130 Q90 125 86 118" opacity="0.5" stroke-width="1.6"/>
+<path d="M108 130 Q116 125 112 118" opacity="0.5" stroke-width="1.6"/>
+<path d="M120 110 Q128 105 124 98" opacity="0.5" stroke-width="1.6"/>
+<circle cx="88" cy="50" r="3" fill="#6366F1"/>
+<circle cx="110" cy="55" r="3" fill="#6366F1" opacity="0.85"/>
+<circle cx="132" cy="52" r="3" fill="#6366F1" opacity="0.7"/>
+</g>`
+});
+
+// C08 · Hokusai Wave — 浮世繪腦浪
+C.push({
+  id: 'C08', name: 'Hokusai', label: 'HOKUSAI',
+  color: '#0891B2',
+  body: `<g stroke="#0891B2" stroke-width="3" fill="none" stroke-linecap="round" stroke-linejoin="round">
+<path d="M50 130 C60 100 90 95 100 110 C110 95 140 100 150 130"/>
+<path d="M55 115 C75 90 95 95 100 110" opacity="0.85"/>
+<path d="M100 110 C105 95 125 90 145 115" opacity="0.85"/>
+<path d="M65 90 Q75 70 90 80 Q98 88 100 100" opacity="0.7"/>
+<path d="M100 100 Q102 88 110 80 Q125 70 135 90" opacity="0.7"/>
+<path d="M75 65 Q85 50 95 65" opacity="0.55" stroke-width="2.4"/>
+<path d="M105 65 Q115 50 125 65" opacity="0.55" stroke-width="2.4"/>
+<circle cx="100" cy="100" r="3" fill="#0891B2"/>
+</g>`
+});
+
+// C09 · Twin Curls — 雙捲鬚
+C.push({
+  id: 'C09', name: 'TwinCurls', label: 'TWIN · CURLS',
+  color: '#DB2777',
+  body: `<g stroke="#DB2777" stroke-width="3.4" fill="none" stroke-linecap="round" stroke-linejoin="round">
+<path d="M100 100 C100 70 75 60 60 75 C45 90 55 115 75 115 C90 115 95 105 90 95 C85 88 95 85 95 95"/>
+<path d="M100 100 C100 70 125 60 140 75 C155 90 145 115 125 115 C110 115 105 105 110 95 C115 88 105 85 105 95"/>
+<path d="M100 100 C95 115 95 138 100 145 C105 138 105 115 100 100"/>
+<circle cx="100" cy="100" r="4" fill="#DB2777"/>
+</g>`
+});
+
+// C10 · Heart-Coil — 心捲腦
+C.push({
+  id: 'C10', name: 'HeartCoil', label: 'HEART · COIL',
+  color: '#E11D48',
+  body: `<g stroke="#E11D48" stroke-width="3.2" fill="none" stroke-linecap="round" stroke-linejoin="round">
+<path d="M100 145 C70 125 50 95 60 75 C70 55 95 60 100 80 C105 60 130 55 140 75 C150 95 130 125 100 145 Z"/>
+<path d="M85 85 C95 75 110 80 108 95 C105 108 90 108 88 95"/>
+<path d="M115 95 C122 90 130 95 128 105 C125 112 116 110 115 102"/>
+<circle cx="100" cy="80" r="2.5" fill="#E11D48"/>
+</g>`
+});
+
+// C11 · Treble Mind — 高音譜號
+C.push({
+  id: 'C11', name: 'TrebleMind', label: 'TREBLE · MIND',
+  color: '#7C3AED',
+  body: `<g stroke="#7C3AED" stroke-width="3.4" fill="none" stroke-linecap="round" stroke-linejoin="round">
+<path d="M100 50 C115 65 115 90 100 100 C85 95 80 80 95 70 C108 68 115 80 108 92 C95 105 85 122 95 138 C108 152 130 142 130 122 C130 108 118 102 105 108 C95 115 100 130 110 130"/>
+<path d="M105 138 C108 145 100 152 95 148" opacity="0.7" stroke-width="2.4"/>
+<circle cx="100" cy="50" r="3" fill="#7C3AED"/>
+</g>`
+});
+
+// C12 · Fingerprint — 指紋腦
+C.push({
+  id: 'C12', name: 'Fingerprint', label: 'FINGERPRINT',
+  color: '#B45309',
+  body: `<g stroke="#B45309" stroke-width="2.2" fill="none" stroke-linecap="round" stroke-linejoin="round">
+<path d="M55 100 Q55 60 100 60 Q145 60 145 100 Q145 142 100 142 L100 145" stroke-width="3"/>
+<path d="M65 100 Q65 70 100 70 Q135 70 135 100 Q135 132 100 132"/>
+<path d="M75 100 Q75 80 100 80 Q125 80 125 100 Q125 122 100 122"/>
+<path d="M85 100 Q85 90 100 90 Q115 90 115 100 Q115 112 100 112"/>
+<path d="M95 100 Q95 96 100 96 Q105 96 105 100" opacity="0.7"/>
+<path d="M58 110 Q72 130 90 132" opacity="0.5" stroke-width="1.8"/>
+<path d="M50 90 Q55 70 65 60" opacity="0.5" stroke-width="1.8"/>
+</g>`
+});
+
+// C13 · Cloud Mind — 雲腦
+C.push({
+  id: 'C13', name: 'CloudMind', label: 'CLOUD · MIND',
+  color: '#3B82F6',
+  body: `<g stroke="#3B82F6" stroke-width="3.2" fill="none" stroke-linecap="round" stroke-linejoin="round">
+<path d="M55 110 C42 110 42 90 55 88 C55 70 80 65 88 78 C92 60 120 60 125 78 C140 75 155 92 145 108 C158 115 150 138 130 134 C125 148 100 150 95 138 C82 148 60 142 60 125 C50 122 50 112 55 110 Z"/>
+<path d="M75 105 Q85 95 80 88" opacity="0.65" stroke-width="2"/>
+<path d="M105 100 Q115 90 110 80" opacity="0.65" stroke-width="2"/>
+<path d="M120 115 Q130 108 128 100" opacity="0.55" stroke-width="2"/>
+<path d="M85 120 Q95 115 92 108" opacity="0.55" stroke-width="2"/>
+</g>`
+});
+
+// C14 · Flame Mind — 焰腦
+C.push({
+  id: 'C14', name: 'Flame', label: 'FLAME',
+  color: '#F97316',
+  body: `<g stroke="#F97316" stroke-width="3.2" fill="none" stroke-linecap="round" stroke-linejoin="round">
+<path d="M100 150 C70 145 60 115 75 95 C68 115 85 120 88 110 C82 90 95 70 100 50 C108 70 122 90 116 112 C118 122 132 118 128 100 C140 118 132 145 100 150 Z"/>
+<path d="M85 130 C90 115 100 115 100 100" opacity="0.7" stroke-width="2"/>
+<path d="M115 130 C110 115 100 115 100 100" opacity="0.7" stroke-width="2"/>
+<circle cx="100" cy="115" r="3" fill="#F97316"/>
+</g>`
+});
+
+// C15 · Infinity Folds — 無限摺
+C.push({
+  id: 'C15', name: 'InfinityFolds', label: 'INFINITY · FOLDS',
+  color: '#A855F7',
+  body: `<g stroke="#A855F7" stroke-width="3.2" fill="none" stroke-linecap="round" stroke-linejoin="round">
+<path d="M55 80 C55 55 100 55 100 80 C100 105 145 105 145 80 C145 55 100 55 100 80 C100 105 55 105 55 80 Z"/>
+<path d="M55 120 C55 145 100 145 100 120 C100 95 145 95 145 120 C145 145 100 145 100 120 C100 95 55 95 55 120 Z"/>
+<path d="M70 78 Q80 90 70 95" opacity="0.6" stroke-width="2"/>
+<path d="M130 78 Q120 90 130 95" opacity="0.6" stroke-width="2"/>
+<path d="M70 122 Q80 110 70 105" opacity="0.6" stroke-width="2"/>
+<path d="M130 122 Q120 110 130 105" opacity="0.6" stroke-width="2"/>
+</g>`
+});
+
+// C16 · Sigil — 流動符文
+C.push({
+  id: 'C16', name: 'Sigil', label: 'SIGIL',
+  color: '#15803D',
+  body: `<g stroke="#15803D" stroke-width="3.2" fill="none" stroke-linecap="round" stroke-linejoin="round">
+<path d="M62 60 C90 50 110 70 100 95 C90 115 70 110 75 90 C82 75 100 80 95 95"/>
+<path d="M138 60 C110 50 90 70 100 95 C110 115 130 110 125 90 C118 75 100 80 105 95"/>
+<path d="M75 130 C95 120 105 140 100 150"/>
+<path d="M125 130 C105 120 95 140 100 150"/>
+<path d="M100 95 L100 130" opacity="0.6" stroke-width="2"/>
+<circle cx="100" cy="95" r="3" fill="#15803D"/>
+<circle cx="100" cy="150" r="2.5" fill="#15803D"/>
+</g>`
+});
+
+// C17 · Wave Stack — 浪疊腦
+C.push({
+  id: 'C17', name: 'WaveStack', label: 'WAVE · STACK',
+  color: '#2563EB',
+  body: `<g stroke="#2563EB" stroke-width="3" fill="none" stroke-linecap="round" stroke-linejoin="round">
+<path d="M55 80 Q72 65 88 80 T120 80 T155 80"/>
+<path d="M55 100 Q72 85 88 100 T120 100 T155 100" opacity="0.85"/>
+<path d="M55 120 Q72 105 88 120 T120 120 T155 120" opacity="0.7"/>
+<path d="M55 140 Q72 125 88 140 T120 140 T155 140" opacity="0.55"/>
+<path d="M70 65 Q85 50 100 65 Q115 80 130 65" opacity="0.85" stroke-width="2.4"/>
+<circle cx="100" cy="100" r="2.5" fill="#2563EB"/>
+</g>`
+});
+
+// C18 · Bubble Brain — 泡泡腦 (Sample 1 風格延伸)
+C.push({
+  id: 'C18', name: 'BubbleBrain', label: 'BUBBLE · BRAIN',
+  color: '#1f2937',
+  body: `<g stroke="#1f2937" stroke-width="3.5" fill="none" stroke-linecap="round" stroke-linejoin="round">
+<path d="M75 65 C50 75 45 110 65 122 C55 138 75 155 92 145 L100 158 L108 145 C130 152 152 138 145 115 C160 95 150 65 125 60 C115 50 88 50 75 65 Z"/>
+<path d="M82 80 C95 70 115 75 112 92 C95 90 80 100 92 115 C108 118 122 105 115 90"/>
+<path d="M92 115 C92 125 100 132 108 128" opacity="0.7" stroke-width="2.4"/>
+</g>`
+});
+
+// C19 · Stream Folds — 流轉腦摺 (Sample 2 風格延伸)
+C.push({
+  id: 'C19', name: 'StreamFolds', label: 'STREAM · FOLDS',
+  color: '#0EA5E9',
+  body: `<defs>
+<linearGradient id="gC19" x1="0" y1="0" x2="1" y2="1">
+<stop offset="0" stop-color="#0EA5E9"/><stop offset="1" stop-color="#06B6D4"/>
+</linearGradient>
+</defs>
+<g stroke="url(#gC19)" stroke-width="3.5" fill="none" stroke-linecap="round" stroke-linejoin="round">
+<path d="M100 56 C75 56 60 75 65 95 C52 105 58 130 78 132 C80 145 100 148 100 132"/>
+<path d="M100 56 C125 56 140 75 135 95 C148 105 142 130 122 132 C120 145 100 148 100 132"/>
+<path d="M75 78 Q88 90 75 100 Q62 110 75 122" opacity="0.85" stroke-width="2.6"/>
+<path d="M125 78 Q112 90 125 100 Q138 110 125 122" opacity="0.85" stroke-width="2.6"/>
+<path d="M85 88 Q95 100 85 110" opacity="0.6" stroke-width="2"/>
+<path d="M115 88 Q105 100 115 110" opacity="0.6" stroke-width="2"/>
+</g>`
+});
+
+// C20 · Curl Cluster — 捲鬚雲群
+C.push({
+  id: 'C20', name: 'CurlCluster', label: 'CURL · CLUSTER',
+  color: '#FB923C',
+  body: `<g stroke="#FB923C" stroke-width="3.2" fill="none" stroke-linecap="round" stroke-linejoin="round">
+<path d="M70 100 C55 95 55 75 75 75 C90 75 90 92 78 92"/>
+<path d="M130 100 C145 95 145 75 125 75 C110 75 110 92 122 92"/>
+<path d="M85 122 C70 122 70 142 90 142 C105 142 105 125 92 125"/>
+<path d="M115 122 C130 122 130 142 110 142 C95 142 95 125 108 125"/>
+<path d="M100 60 C92 70 100 80 108 70 C115 60 100 55 100 60" opacity="0.85" stroke-width="2.6"/>
+<circle cx="100" cy="100" r="6" fill="#FB923C"/>
+<circle cx="100" cy="100" r="11" stroke="#FB923C" stroke-width="1" fill="none" stroke-dasharray="2 2" opacity="0.5"/>
+</g>`
+});
+
+// ============================================================
 // Build SVG files
 // ============================================================
 
@@ -1345,6 +1632,11 @@ for (const d of R) {
   fs.writeFileSync(file, fullSvg(d));
 }
 
+for (const d of C) {
+  const file = path.join(CURVE_DIR, `curve_${d.id}_${d.name}.svg`);
+  fs.writeFileSync(file, fullSvg(d));
+}
+
 // ============================================================
 // Build index.html
 // ============================================================
@@ -1363,6 +1655,17 @@ const cards = D.map(d => `
 const remixCards = R.map(d => `
       <div class="card remix" id="card-${d.id}" style="--brand:${d.color};">
         <div class="card-id">${d.id}　·　<span class="tag">${d.tags}</span></div>
+        <div class="svg-wrap">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200">
+            ${d.body}
+          </svg>
+        </div>
+        <div class="card-label">${d.label}</div>
+      </div>`).join('');
+
+const curveCards = C.map(d => `
+      <div class="card" id="card-${d.id}" style="--brand:${d.color};">
+        <div class="card-id">ID · ${d.id}</div>
         <div class="svg-wrap">
           <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200">
             ${d.body}
@@ -1484,6 +1787,18 @@ const html = `<!doctype html>
       </section>
 
       <section>
+        <h2>Curve Series · 曲線系列 (20 款)</h2>
+        <p class="section-intro">
+          延續原始樣本兩種線描精神 — 手繪連續單線（Sample 1）與柔順腦摺漸變（Sample 2），
+          以更彎曲、更豐富、更流動的 bezier 曲線重新發想 20 款。每一款都試圖讓「線」自己說話：書法筆觸、
+          佩斯利、凱爾特結、絲帶、等高線、煙霧、浮世繪浪、雙捲鬚、心捲、高音譜號、指紋、雲、火焰、無限、符文、
+          浪疊、泡泡、流摺等變化。
+        </p>
+        <div class="grid">${curveCards}
+        </div>
+      </section>
+
+      <section>
         <h2>30 Hand-crafted Logos · 心智系列</h2>
         <div class="grid">${cards}
         </div>
@@ -1501,7 +1816,7 @@ const html = `<!doctype html>
 
       <footer>
         <span>© Brand Logo Studio</span>
-        <span>30 main · 24 remix · SVG · vector</span>
+        <span>30 main · 24 remix · 20 curve · SVG · vector</span>
       </footer>
     </div>
   </body>
@@ -1512,4 +1827,5 @@ fs.writeFileSync(path.join(__dirname, 'index.html'), html);
 
 console.log(`✓ wrote ${D.length} main SVGs to ${OUT_DIR}`);
 console.log(`✓ wrote ${R.length} remix SVGs to ${REMIX_DIR}`);
+console.log(`✓ wrote ${C.length} curve SVGs to ${CURVE_DIR}`);
 console.log(`✓ wrote index.html`);

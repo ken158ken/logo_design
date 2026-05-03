@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" width="200" height="200">
+<rect width="200" height="200" fill="#FAFAFA"/>
+<g stroke="#FB923C" stroke-width="3.2" fill="none" stroke-linecap="round" stroke-linejoin="round">
+<path d="M70 100 C55 95 55 75 75 75 C90 75 90 92 78 92"/>
+<path d="M130 100 C145 95 145 75 125 75 C110 75 110 92 122 92"/>
+<path d="M85 122 C70 122 70 142 90 142 C105 142 105 125 92 125"/>
+<path d="M115 122 C130 122 130 142 110 142 C95 142 95 125 108 125"/>
+<path d="M100 60 C92 70 100 80 108 70 C115 60 100 55 100 60" opacity="0.85" stroke-width="2.6"/>
+<circle cx="100" cy="100" r="6" fill="#FB923C"/>
+<circle cx="100" cy="100" r="11" stroke="#FB923C" stroke-width="1" fill="none" stroke-dasharray="2 2" opacity="0.5"/>
+</g>
+<text x="100" y="190" text-anchor="middle" font-family="Helvetica, Arial, sans-serif" font-size="11" font-weight="700" letter-spacing="2" fill="#FB923C">CURL · CLUSTER</text>
+</svg>
