@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" width="200" height="200">
+<rect width="200" height="200" fill="#FAFAFA"/>
+<g stroke="#84CC16" fill="none" stroke-width="3" stroke-linecap="round">
+<path d="M70 120 A30 30 0 0 1 130 120" opacity="1.00"/><path d="M58 120 A42 42 0 0 1 142 120" opacity="0.85"/><path d="M46 120 A54 54 0 0 1 154 120" opacity="0.70"/><path d="M34 120 A66 66 0 0 1 166 120" opacity="0.55"/><path d="M22 120 A78 78 0 0 1 178 120" opacity="0.40"/>
+<line x1="40" y1="120" x2="160" y2="120" stroke-width="1.5" opacity="0.5"/>
+<circle cx="100" cy="120" r="3" fill="#84CC16"/>
+<line x1="100" y1="50" x2="100" y2="38" stroke-width="2"/>
+<circle cx="100" cy="34" r="2.5" fill="#84CC16"/>
+</g>
+<text x="100" y="190" text-anchor="middle" font-family="Helvetica, Arial, sans-serif" font-size="11" font-weight="700" letter-spacing="2" fill="#84CC16">STRATUM</text>
+</svg>

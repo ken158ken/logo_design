@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" width="200" height="200">
+<rect width="200" height="200" fill="#FAFAFA"/>
+<g stroke="#06B6D4" fill="none" stroke-linecap="round" stroke-linejoin="round">
+<path d="M100 50 C70 50 55 75 60 100 C50 108 55 130 75 135 C80 150 100 150 100 150" stroke-width="4"/>
+<path d="M82 70 Q92 80 82 92 Q70 102 82 116" stroke-width="2" opacity="0.65"/>
+<path d="M70 95 Q80 98 78 110" stroke-width="1.6" opacity="0.45"/>
+<g stroke-width="2" opacity="0.85">
+<path d="M120 65 Q138 100 120 135"/>
+<path d="M138 55 Q165 100 138 145" opacity="0.55"/>
+<path d="M156 45 Q188 100 156 155" opacity="0.3"/>
+</g>
+<circle cx="100" cy="100" r="3" fill="#06B6D4"/>
+</g>
+<text x="100" y="190" text-anchor="middle" font-family="Helvetica, Arial, sans-serif" font-size="11" font-weight="700" letter-spacing="2" fill="#06B6D4">ECHO</text>
+</svg>

@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" width="200" height="200">
+<rect width="200" height="200" fill="#FAFAFA"/>
+<g stroke="#0EA5E9" fill="none" stroke-width="2" stroke-linecap="round">
+<path d="M100 100 L105.04 102.44 L104.48 105.64 L101.93 108.59 L97.64 110.13 L92.46 109.34 L87.7 105.81 L84.8 99.87 L84.93 92.57 L88.68 85.49 L95.78 80.45 L105.08 79.01 L114.72 82.07 L122.51 89.59 L126.4 100.44 L125 112.6 L118.01 123.49 L106.32 130.55 L92.01 131.81 L77.94 126.4 L67.2 114.84 L62.41 99.05 L65.14 82.06 L75.45 67.41 L91.76 58.41 L111.07 57.42 L129.53 65.25 L143.17 80.91 L148.77 101.64 L144.62 123.44 L130.94 141.8 L109.97 152.66 L85.66 153.3 L62.85 142.97 L46.39 123.17 L40.05 97.48 L45.71 70.9"/>
+<line x1="170" y1="100" x2="188" y2="100" stroke-dasharray="2 3" opacity="0.6"/><line x1="149.5" y1="149.5" x2="162.23" y2="162.23" stroke-dasharray="2 3" opacity="0.6"/><line x1="100" y1="170" x2="100" y2="188" stroke-dasharray="2 3" opacity="0.6"/><line x1="50.5" y1="149.5" x2="37.77" y2="162.23" stroke-dasharray="2 3" opacity="0.6"/><line x1="30" y1="100" x2="12" y2="100" stroke-dasharray="2 3" opacity="0.6"/><line x1="50.5" y1="50.5" x2="37.77" y2="37.77" stroke-dasharray="2 3" opacity="0.6"/><line x1="100" y1="30" x2="100" y2="12" stroke-dasharray="2 3" opacity="0.6"/><line x1="149.5" y1="50.5" x2="162.23" y2="37.77" stroke-dasharray="2 3" opacity="0.6"/>
+</g>
+<text x="100" y="190" text-anchor="middle" font-family="Helvetica, Arial, sans-serif" font-size="11" font-weight="700" letter-spacing="2" fill="#0EA5E9">SPIRAL</text>
+</svg>

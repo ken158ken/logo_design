@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" width="200" height="200">
+<rect width="200" height="200" fill="#FAFAFA"/>
+<g stroke="#3B82F6" fill="none" stroke-width="3" stroke-linecap="round">
+<path d="M30 130 C70 60 130 160 170 90" opacity="1.00"/><path d="M30 116 C70 46 130 146 170 76" opacity="0.82"/><path d="M30 102 C70 32 130 132 170 62" opacity="0.64"/><path d="M30 88 C70 18 130 118 170 48" opacity="0.46"/>
+<circle cx="30" cy="130" r="3" fill="#3B82F6"/>
+<circle cx="170" cy="62" r="3" fill="#3B82F6"/>
+</g>
+<text x="100" y="190" text-anchor="middle" font-family="Helvetica, Arial, sans-serif" font-size="11" font-weight="700" letter-spacing="2" fill="#3B82F6">AURORA</text>
+</svg>

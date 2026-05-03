@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" width="200" height="200">
+<rect width="200" height="200" fill="#FAFAFA"/>
+<g stroke="#0F766E" fill="none" stroke-width="2.6" stroke-linecap="round">
+<line x1="25" y1="130" x2="175" y2="130" stroke-width="1.5"/>
+<path d="M68 130 A32 32 0 0 1 132 130" opacity="1.00"/><path d="M57 130 A43 43 0 0 1 143 130" opacity="0.84"/><path d="M46 130 A54 54 0 0 1 154 130" opacity="0.68"/><path d="M35 130 A65 65 0 0 1 165 130" opacity="0.52"/><path d="M24 130 A76 76 0 0 1 176 130" opacity="0.36"/>
+<line x1="8" y1="130" x2="-5" y2="130" stroke-dasharray="2 3" opacity="0.6"/><line x1="20.33" y1="84" x2="9.07" y2="77.5" stroke-dasharray="2 3" opacity="0.6"/><line x1="54" y1="50.33" x2="47.5" y2="39.07" stroke-dasharray="2 3" opacity="0.6"/><line x1="100" y1="38" x2="100" y2="25" stroke-dasharray="2 3" opacity="0.6"/><line x1="146" y1="50.33" x2="152.5" y2="39.07" stroke-dasharray="2 3" opacity="0.6"/><line x1="179.67" y1="84" x2="190.93" y2="77.5" stroke-dasharray="2 3" opacity="0.6"/><line x1="192" y1="130" x2="205" y2="130" stroke-dasharray="2 3" opacity="0.6"/>
+<circle cx="100" cy="130" r="3" fill="#0F766E"/>
+</g>
+<text x="100" y="190" text-anchor="middle" font-family="Helvetica, Arial, sans-serif" font-size="11" font-weight="700" letter-spacing="2" fill="#0F766E">HORIZON</text>
+</svg>

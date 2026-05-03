@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" width="200" height="200">
+<rect width="200" height="200" fill="#FAFAFA"/>
+<g stroke="#F97316" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+<path d="M100 68 Q113.85 45.74 100 20 Q86.15 45.74 100 68 Z" opacity="1"/><path d="M122.63 77.37 Q148.16 71.43 156.57 43.43 Q128.57 51.84 122.63 77.37 Z" opacity="0.55"/><path d="M132 100 Q154.26 113.85 180 100 Q154.26 86.15 132 100 Z" opacity="1"/><path d="M122.63 122.63 Q128.57 148.16 156.57 156.57 Q148.16 128.57 122.63 122.63 Z" opacity="0.55"/><path d="M100 132 Q86.15 154.26 100 180 Q113.85 154.26 100 132 Z" opacity="1"/><path d="M77.37 122.63 Q51.84 128.57 43.43 156.57 Q71.43 148.16 77.37 122.63 Z" opacity="0.55"/><path d="M68 100 Q45.74 86.15 20 100 Q45.74 113.85 68 100 Z" opacity="1"/><path d="M77.37 77.37 Q71.43 51.84 43.43 43.43 Q51.84 71.43 77.37 77.37 Z" opacity="0.55"/>
+<path d="M100 75 Q115 80 110 95 Q90 100 90 110 Q105 122 118 110" stroke-width="2.4"/>
+<circle cx="100" cy="100" r="4" fill="#F97316"/>
+</g>
+<text x="100" y="190" text-anchor="middle" font-family="Helvetica, Arial, sans-serif" font-size="11" font-weight="700" letter-spacing="2" fill="#F97316">BLOOM</text>
+</svg>

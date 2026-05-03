@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<svg width="200" height="200" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
-    <!-- Vectorized Version of Sample 1 -->
-    <path d="M100,55 C70,55 50,75 50,105 C50,135 70,155 100,155 C130,155 150,135 150,105 C150,75 130,55 100,55 Z" fill="none" stroke="#2C3E50" stroke-width="4"/>
-    <path d="M100,55 Q115,80 100,105 Q85,130 100,155" fill="none" stroke="#2C3E50" stroke-width="2" opacity="0.6"/>
-    <path d="M70,85 C75,80 85,80 90,85 M110,85 C115,80 125,80 130,85" fill="none" stroke="#2C3E50" stroke-width="3" stroke-linecap="round"/>
-    <path d="M70,125 C75,130 85,130 90,125 M110,125 C115,130 125,130 130,125" fill="none" stroke="#2C3E50" stroke-width="3" stroke-linecap="round"/>
-    <text x="100" y="185" font-family="Arial" font-size="12" text-anchor="middle" font-weight="bold" fill="#2C3E50">VECTORIZED SAMPLE 1</text>
-</svg>

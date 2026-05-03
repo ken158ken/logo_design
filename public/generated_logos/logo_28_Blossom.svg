@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" width="200" height="200">
+<rect width="200" height="200" fill="#FAFAFA"/>
+<g stroke="#15803D" fill="none" stroke-width="2.2" stroke-linecap="round">
+<ellipse cx="100" cy="72" rx="22" ry="11" transform="rotate(-90 100 72)" opacity="1"/><ellipse cx="124.25" cy="86" rx="22" ry="11" transform="rotate(-30 124.25 86)" opacity="0.6"/><ellipse cx="124.25" cy="114" rx="22" ry="11" transform="rotate(30 124.25 114)" opacity="1"/><ellipse cx="100" cy="128" rx="22" ry="11" transform="rotate(90 100 128)" opacity="0.6"/><ellipse cx="75.75" cy="114" rx="22" ry="11" transform="rotate(150 75.75 114)" opacity="1"/><ellipse cx="75.75" cy="86" rx="22" ry="11" transform="rotate(210 75.75 86)" opacity="0.6"/>
+<circle cx="100" cy="100" r="9" fill="#15803D"/>
+<path d="M93 100 Q100 92 107 100 M93 105 Q100 97 107 105" stroke="white" stroke-width="1.2"/>
+</g>
+<text x="100" y="190" text-anchor="middle" font-family="Helvetica, Arial, sans-serif" font-size="11" font-weight="700" letter-spacing="2" fill="#15803D">BLOSSOM</text>
+</svg>
