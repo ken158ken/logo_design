@@ -1611,6 +1611,202 @@ C.push({
 });
 
 // ============================================================
+// Profile Series — 10 side-profile head + neural-network logos
+// (inspired by sample_logo3 — coach-psychology style)
+// ============================================================
+
+const PROFILE_DIR = path.join(__dirname, 'public', 'profile_logos');
+fs.mkdirSync(PROFILE_DIR, { recursive: true });
+
+// Side-profile head silhouette, facing LEFT
+// Hand-tuned bezier path, viewBox 200x200
+const HEAD_LEFT = "M100 28 C133 28 158 53 156 95 C156 121 144 133 140 152 L140 178 L90 178 L90 148 C82 144 76 138 76 130 C80 122 78 118 72 116 C62 116 50 112 44 116 L38 120 C32 114 40 100 52 96 C58 86 56 78 60 68 C66 54 80 38 100 28 Z";
+const HEAD_RIGHT = "M100 28 C67 28 42 53 44 95 C44 121 56 133 60 152 L60 178 L110 178 L110 148 C118 144 124 138 124 130 C120 122 122 118 128 116 C138 116 150 112 156 116 L162 120 C168 114 160 100 148 96 C142 86 144 78 140 68 C134 54 120 38 100 28 Z";
+
+// Cranium nodes (inside the upper head area, facing-left)
+const HN = [
+  [125, 38], [98, 42], [148, 56], [112, 50], [85, 55],
+  [135, 65], [102, 60], [120, 72], [90, 72], [142, 80],
+  [108, 80], [128, 88], [98, 88], [115, 95]
+];
+const HE = [
+  [0,3],[0,5],[0,2],[1,3],[1,4],[1,6],[2,5],[2,9],
+  [3,5],[3,6],[3,7],[4,6],[4,8],[5,7],[5,9],[6,7],
+  [6,12],[7,11],[7,10],[7,13],[8,12],[9,11],[10,11],
+  [10,12],[10,13],[11,13],[12,13]
+];
+function mirrorNodes(nodes) {
+  return nodes.map(([x,y]) => [200 - x, y]);
+}
+
+const S = [];
+
+// S01 · Burgundy Mind  (matches sample 3 most closely)
+S.push({
+  id: 'S01', name: 'BurgundyMind', label: 'BURGUNDY · MIND',
+  color: '#991B1B',
+  body: `<path d="${HEAD_LEFT}" fill="#991B1B"/>
+<g stroke="#FAFAFA" stroke-width="1.5" fill="none">
+${HE.map(([a,b])=>`<line x1="${HN[a][0]}" y1="${HN[a][1]}" x2="${HN[b][0]}" y2="${HN[b][1]}"/>`).join('')}
+</g>
+<g fill="#FAFAFA" stroke="#FAFAFA" stroke-width="0.8">
+${HN.map(([x,y],i)=>`<circle cx="${x}" cy="${y}" r="${i%4===0?4:3}"/>`).join('')}
+</g>`
+});
+
+// S02 · Outline + Network  (clean line-only profile)
+S.push({
+  id: 'S02', name: 'OutlineNetwork', label: 'OUTLINE · NETWORK',
+  color: '#0F766E',
+  body: `<path d="${HEAD_LEFT}" fill="none" stroke="#0F766E" stroke-width="3" stroke-linejoin="round"/>
+<g stroke="#0F766E" stroke-width="1.4" fill="none" opacity="0.7">
+${HE.map(([a,b])=>`<line x1="${HN[a][0]}" y1="${HN[a][1]}" x2="${HN[b][0]}" y2="${HN[b][1]}"/>`).join('')}
+</g>
+<g fill="#0F766E">
+${HN.map(([x,y],i)=>`<circle cx="${x}" cy="${y}" r="${i%4===0?3.5:2.5}"/>`).join('')}
+</g>`
+});
+
+// S03 · Dark Slate + Neon Cyan
+S.push({
+  id: 'S03', name: 'NeonMind', label: 'NEON · MIND',
+  color: '#06B6D4',
+  body: `<path d="${HEAD_LEFT}" fill="#1F2937"/>
+<g stroke="#06B6D4" stroke-width="1.4" fill="none" opacity="0.85">
+${HE.map(([a,b])=>`<line x1="${HN[a][0]}" y1="${HN[a][1]}" x2="${HN[b][0]}" y2="${HN[b][1]}"/>`).join('')}
+</g>
+<g fill="#06B6D4">
+${HN.map(([x,y],i)=>`<circle cx="${x}" cy="${y}" r="${i%4===0?4:3}"/><circle cx="${x}" cy="${y}" r="${i%4===0?6:5}" fill="none" stroke="#06B6D4" stroke-width="0.6" opacity="0.55"/>`).join('')}
+</g>`
+});
+
+// S04 · Right-Facing Mirror — Indigo
+{
+  const HN2 = mirrorNodes(HN);
+  S.push({
+    id: 'S04', name: 'IndigoMirror', label: 'INDIGO · MIRROR',
+    color: '#3730A3',
+    body: `<path d="${HEAD_RIGHT}" fill="#3730A3"/>
+<g stroke="#FAFAFA" stroke-width="1.5" fill="none">
+${HE.map(([a,b])=>`<line x1="${HN2[a][0]}" y1="${HN2[a][1]}" x2="${HN2[b][0]}" y2="${HN2[b][1]}"/>`).join('')}
+</g>
+<g fill="#FAFAFA">
+${HN2.map(([x,y],i)=>`<circle cx="${x}" cy="${y}" r="${i%4===0?4:3}"/>`).join('')}
+</g>`
+  });
+}
+
+// S05 · Polygon Mesh — Wine + Triangulated facets
+{
+  const tri = [[0,3,5],[3,5,7],[5,7,9],[7,9,11],[3,1,6],[1,6,4],[6,4,8],[6,7,12],[8,12,4],[8,12,10],[12,10,13],[10,11,13],[7,11,13]];
+  S.push({
+    id: 'S05', name: 'PolyMesh', label: 'POLY · MESH',
+    color: '#7C2D12',
+    body: `<path d="${HEAD_LEFT}" fill="#7C2D12"/>
+<g stroke="#FAFAFA" stroke-width="1" fill="none" opacity="0.5">
+${tri.map(([a,b,c])=>`<polygon points="${HN[a][0]},${HN[a][1]} ${HN[b][0]},${HN[b][1]} ${HN[c][0]},${HN[c][1]}"/>`).join('')}
+</g>
+<g stroke="#FAFAFA" stroke-width="1.4" fill="none" opacity="0.9">
+${HE.slice(0,16).map(([a,b])=>`<line x1="${HN[a][0]}" y1="${HN[a][1]}" x2="${HN[b][0]}" y2="${HN[b][1]}"/>`).join('')}
+</g>
+<g fill="#FAFAFA">
+${HN.map(([x,y],i)=>`<circle cx="${x}" cy="${y}" r="${i%4===0?3.5:2.5}"/>`).join('')}
+</g>`
+  });
+}
+
+// S06 · Two-Tone Split — top half fill / bottom half outline
+S.push({
+  id: 'S06', name: 'DuoTone', label: 'DUO · TONE',
+  color: '#BE185D',
+  body: `<defs>
+<linearGradient id="gS06" x1="0" y1="0" x2="0" y2="1">
+<stop offset="0" stop-color="#BE185D"/>
+<stop offset="1" stop-color="#9D174D"/>
+</linearGradient>
+</defs>
+<path d="${HEAD_LEFT}" fill="url(#gS06)"/>
+<g stroke="#FECDD3" stroke-width="1.4" fill="none">
+${HE.map(([a,b])=>`<line x1="${HN[a][0]}" y1="${HN[a][1]}" x2="${HN[b][0]}" y2="${HN[b][1]}"/>`).join('')}
+</g>
+<g fill="#FECDD3">
+${HN.map(([x,y],i)=>`<circle cx="${x}" cy="${y}" r="${i%4===0?4:3}"/>`).join('')}
+</g>`
+});
+
+// S07 · Constellation Mode — outline head, halo stars
+S.push({
+  id: 'S07', name: 'StellarMind', label: 'STELLAR · MIND',
+  color: '#1E3A8A',
+  body: `<path d="${HEAD_LEFT}" fill="none" stroke="#1E3A8A" stroke-width="2.6" stroke-linejoin="round"/>
+<g>
+${HE.slice(0,14).map(([a,b])=>`<line x1="${HN[a][0]}" y1="${HN[a][1]}" x2="${HN[b][0]}" y2="${HN[b][1]}" stroke="#1E3A8A" stroke-width="0.9" opacity="0.45"/>`).join('')}
+${HN.map(([x,y],i)=>{
+  const r = i % 4 === 0 ? 3 : 2;
+  return `<circle cx="${x}" cy="${y}" r="${r}" fill="#1E3A8A"/>` +
+         `<circle cx="${x}" cy="${y}" r="${r+3}" stroke="#1E3A8A" stroke-width="0.7" fill="none" opacity="0.45"/>`;
+}).join('')}
+</g>`
+});
+
+// S08 · Branching Tree — burgundy head + tree-like network
+{
+  const tree = [[0,3],[3,5],[5,7],[7,11],[11,13],[3,6],[6,1],[1,4],[6,12],[5,2],[5,9],[7,10],[8,4],[8,12]];
+  S.push({
+    id: 'S08', name: 'BranchMind', label: 'BRANCH · MIND',
+    color: '#15803D',
+    body: `<path d="${HEAD_LEFT}" fill="#14532D"/>
+<g stroke="#86EFAC" stroke-width="1.6" fill="none" stroke-linecap="round">
+${tree.map(([a,b])=>`<line x1="${HN[a][0]}" y1="${HN[a][1]}" x2="${HN[b][0]}" y2="${HN[b][1]}"/>`).join('')}
+</g>
+<g fill="#86EFAC">
+${HN.map(([x,y],i)=>`<circle cx="${x}" cy="${y}" r="${i===5||i===3?4:i%2===0?3:2.5}"/>`).join('')}
+</g>`
+  });
+}
+
+// S09 · Espresso Wireframe (thin lines, restrained)
+S.push({
+  id: 'S09', name: 'WireframeMind', label: 'WIREFRAME · MIND',
+  color: '#451A03',
+  body: `<path d="${HEAD_LEFT}" fill="none" stroke="#451A03" stroke-width="2.4" stroke-dasharray="3 2" stroke-linejoin="round"/>
+<g stroke="#451A03" stroke-width="1.1" fill="none" opacity="0.85">
+${HE.map(([a,b])=>`<line x1="${HN[a][0]}" y1="${HN[a][1]}" x2="${HN[b][0]}" y2="${HN[b][1]}"/>`).join('')}
+</g>
+<g stroke="#451A03" stroke-width="1.4" fill="#FAFAFA">
+${HN.map(([x,y],i)=>`<circle cx="${x}" cy="${y}" r="${i%4===0?3.5:2.5}"/>`).join('')}
+</g>`
+});
+
+// S10 · Premium Gradient — luxe brand
+S.push({
+  id: 'S10', name: 'PremiumMind', label: 'PREMIUM · MIND',
+  color: '#6366F1',
+  body: `<defs>
+<linearGradient id="gS10" x1="0" y1="0" x2="1" y2="1">
+<stop offset="0" stop-color="#312E81"/>
+<stop offset="0.5" stop-color="#4338CA"/>
+<stop offset="1" stop-color="#6366F1"/>
+</linearGradient>
+<radialGradient id="gS10n">
+<stop offset="0" stop-color="#fff" stop-opacity="1"/>
+<stop offset="1" stop-color="#fff" stop-opacity="0.3"/>
+</radialGradient>
+</defs>
+<path d="${HEAD_LEFT}" fill="url(#gS10)"/>
+<g stroke="#fff" stroke-width="1.3" fill="none" opacity="0.85">
+${HE.map(([a,b])=>`<line x1="${HN[a][0]}" y1="${HN[a][1]}" x2="${HN[b][0]}" y2="${HN[b][1]}"/>`).join('')}
+</g>
+<g>
+${HN.map(([x,y],i)=>{
+  const r = i%4===0 ? 4 : 3;
+  return `<circle cx="${x}" cy="${y}" r="${r+3}" fill="url(#gS10n)" opacity="0.55"/>` +
+         `<circle cx="${x}" cy="${y}" r="${r}" fill="#fff"/>`;
+}).join('')}
+</g>`
+});
+
+// ============================================================
 // Build SVG files
 // ============================================================
 
@@ -1634,6 +1830,11 @@ for (const d of R) {
 
 for (const d of C) {
   const file = path.join(CURVE_DIR, `curve_${d.id}_${d.name}.svg`);
+  fs.writeFileSync(file, fullSvg(d));
+}
+
+for (const d of S) {
+  const file = path.join(PROFILE_DIR, `profile_${d.id}_${d.name}.svg`);
   fs.writeFileSync(file, fullSvg(d));
 }
 
@@ -1664,6 +1865,17 @@ const remixCards = R.map(d => `
       </div>`).join('');
 
 const curveCards = C.map(d => `
+      <div class="card" id="card-${d.id}" style="--brand:${d.color};">
+        <div class="card-id">ID · ${d.id}</div>
+        <div class="svg-wrap">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200">
+            ${d.body}
+          </svg>
+        </div>
+        <div class="card-label">${d.label}</div>
+      </div>`).join('');
+
+const profileCards = S.map(d => `
       <div class="card" id="card-${d.id}" style="--brand:${d.color};">
         <div class="card-id">ID · ${d.id}</div>
         <div class="svg-wrap">
@@ -1724,6 +1936,7 @@ const html = `<!doctype html>
       section { margin-top: 72px; }
 
       .samples { display: grid; grid-template-columns: repeat(2, minmax(0,1fr)); gap: 24px; max-width: 720px; }
+      .samples.three { grid-template-columns: repeat(3, minmax(0,1fr)); max-width: 1080px; }
       .sample {
         background: var(--panel); border: 1px solid var(--line); border-radius: 16px;
         padding: 22px; transition: transform .25s ease, border-color .25s ease;
@@ -1774,7 +1987,7 @@ const html = `<!doctype html>
 
       <section>
         <h2>Original Samples · 原始樣本參考</h2>
-        <div class="samples">
+        <div class="samples three">
           <div class="sample">
             <img src="/sample_logo1.jpg" alt="Sample 1" />
             <div class="sample-cap"><span>Sample 01</span><span>線描風格</span></div>
@@ -1783,6 +1996,21 @@ const html = `<!doctype html>
             <img src="/sample_logo2.jpg" alt="Sample 2" />
             <div class="sample-cap"><span>Sample 02</span><span>漸變現代</span></div>
           </div>
+          <div class="sample">
+            <img src="/sample_logo3.jpg" alt="Sample 3" />
+            <div class="sample-cap"><span>Sample 03</span><span>側面神經網絡</span></div>
+          </div>
+        </div>
+      </section>
+
+      <section>
+        <h2>Profile Series · 側面頭像系列 (10 款) ⭑ NEW</h2>
+        <p class="section-intro">
+          以 Sample 3「Coach Psychology」風格為靈感 — 側面頭部剪影 + 大腦區域內部神經網絡節點圖譜。
+          10 款變體：經典酒紅、線描、霓虹深底、右向鏡像、多邊網格、雙色調、星座光暈、樹狀分枝、技術點線、漸變高端。
+          每一款都試圖在「品牌 / 教練 / 心理顧問」這個語境下，傳達專業、可信、思維深度。
+        </p>
+        <div class="grid">${profileCards}
         </div>
       </section>
 
@@ -1816,7 +2044,7 @@ const html = `<!doctype html>
 
       <footer>
         <span>© Brand Logo Studio</span>
-        <span>30 main · 24 remix · 20 curve · SVG · vector</span>
+        <span>10 profile · 20 curve · 30 main · 24 remix · SVG · vector</span>
       </footer>
     </div>
   </body>
@@ -1828,4 +2056,5 @@ fs.writeFileSync(path.join(__dirname, 'index.html'), html);
 console.log(`✓ wrote ${D.length} main SVGs to ${OUT_DIR}`);
 console.log(`✓ wrote ${R.length} remix SVGs to ${REMIX_DIR}`);
 console.log(`✓ wrote ${C.length} curve SVGs to ${CURVE_DIR}`);
+console.log(`✓ wrote ${S.length} profile SVGs to ${PROFILE_DIR}`);
 console.log(`✓ wrote index.html`);

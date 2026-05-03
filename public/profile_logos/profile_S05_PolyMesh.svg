@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" width="200" height="200">
+<rect width="200" height="200" fill="#FAFAFA"/>
+<path d="M100 28 C133 28 158 53 156 95 C156 121 144 133 140 152 L140 178 L90 178 L90 148 C82 144 76 138 76 130 C80 122 78 118 72 116 C62 116 50 112 44 116 L38 120 C32 114 40 100 52 96 C58 86 56 78 60 68 C66 54 80 38 100 28 Z" fill="#7C2D12"/>
+<g stroke="#FAFAFA" stroke-width="1" fill="none" opacity="0.5">
+<polygon points="125,38 112,50 135,65"/><polygon points="112,50 135,65 120,72"/><polygon points="135,65 120,72 142,80"/><polygon points="120,72 142,80 128,88"/><polygon points="112,50 98,42 102,60"/><polygon points="98,42 102,60 85,55"/><polygon points="102,60 85,55 90,72"/><polygon points="102,60 120,72 98,88"/><polygon points="90,72 98,88 85,55"/><polygon points="90,72 98,88 108,80"/><polygon points="98,88 108,80 115,95"/><polygon points="108,80 128,88 115,95"/><polygon points="120,72 128,88 115,95"/>
+</g>
+<g stroke="#FAFAFA" stroke-width="1.4" fill="none" opacity="0.9">
+<line x1="125" y1="38" x2="112" y2="50"/><line x1="125" y1="38" x2="135" y2="65"/><line x1="125" y1="38" x2="148" y2="56"/><line x1="98" y1="42" x2="112" y2="50"/><line x1="98" y1="42" x2="85" y2="55"/><line x1="98" y1="42" x2="102" y2="60"/><line x1="148" y1="56" x2="135" y2="65"/><line x1="148" y1="56" x2="142" y2="80"/><line x1="112" y1="50" x2="135" y2="65"/><line x1="112" y1="50" x2="102" y2="60"/><line x1="112" y1="50" x2="120" y2="72"/><line x1="85" y1="55" x2="102" y2="60"/><line x1="85" y1="55" x2="90" y2="72"/><line x1="135" y1="65" x2="120" y2="72"/><line x1="135" y1="65" x2="142" y2="80"/><line x1="102" y1="60" x2="120" y2="72"/>
+</g>
+<g fill="#FAFAFA">
+<circle cx="125" cy="38" r="3.5"/><circle cx="98" cy="42" r="2.5"/><circle cx="148" cy="56" r="2.5"/><circle cx="112" cy="50" r="2.5"/><circle cx="85" cy="55" r="3.5"/><circle cx="135" cy="65" r="2.5"/><circle cx="102" cy="60" r="2.5"/><circle cx="120" cy="72" r="2.5"/><circle cx="90" cy="72" r="3.5"/><circle cx="142" cy="80" r="2.5"/><circle cx="108" cy="80" r="2.5"/><circle cx="128" cy="88" r="2.5"/><circle cx="98" cy="88" r="3.5"/><circle cx="115" cy="95" r="2.5"/>
+</g>
+<text x="100" y="190" text-anchor="middle" font-family="Helvetica, Arial, sans-serif" font-size="11" font-weight="700" letter-spacing="2" fill="#7C2D12">POLY · MESH</text>
+</svg>
