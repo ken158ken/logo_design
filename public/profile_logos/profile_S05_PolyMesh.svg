@@ -1,6 +1,6 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" width="200" height="200">
 <rect width="200" height="200" fill="#FAFAFA"/>
-<path d="M100 28 C133 28 158 53 156 95 C156 121 144 133 140 152 L140 178 L90 178 L90 148 C82 144 76 138 76 130 C80 122 78 118 72 116 C62 116 50 112 44 116 L38 120 C32 114 40 100 52 96 C58 86 56 78 60 68 C66 54 80 38 100 28 Z" fill="#7C2D12"/>
+<path d="M100 28 C145 28 168 65 162 108 C158 132 148 142 144 152 L144 178 L88 178 L88 152 C80 150 72 144 70 138 S76 122 70 112 C58 112 46 108 44 102 S50 96 54 92 S58 64 64 50 C76 34 92 28 100 28 Z" fill="#7C2D12"/>
 <g stroke="#FAFAFA" stroke-width="1" fill="none" opacity="0.5">
 <polygon points="125,38 112,50 135,65"/><polygon points="112,50 135,65 120,72"/><polygon points="135,65 120,72 142,80"/><polygon points="120,72 142,80 128,88"/><polygon points="112,50 98,42 102,60"/><polygon points="98,42 102,60 85,55"/><polygon points="102,60 85,55 90,72"/><polygon points="102,60 120,72 98,88"/><polygon points="90,72 98,88 85,55"/><polygon points="90,72 98,88 108,80"/><polygon points="98,88 108,80 115,95"/><polygon points="108,80 128,88 115,95"/><polygon points="120,72 128,88 115,95"/>
 </g>
